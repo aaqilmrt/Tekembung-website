@@ -1,26 +1,200 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
 
+/* ============================================
+   DESIGN TOKENS — TEKEMBUNG
+   Warna terinspirasi dari logo dan kemasan
+   ============================================ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Palet warna utama */
+  --color-maroon: #7B1A1A;
+  --color-maroon-dark: #5A1212;
+  --color-maroon-light: #9B2A2A;
+  --color-gold: #C8922A;
+  --color-gold-light: #E0A93A;
+  --color-gold-pale: #F5DFA0;
+  --color-orange: #D4621A;
+  --color-cream: #FDF6EC;
+  --color-cream-dark: #F5EAD8;
+  --color-brown: #3D1F0A;
+  --color-brown-mid: #6B3A1F;
+
+  /* Teks */
+  --text-primary: #2A1208;
+  --text-secondary: #6B3A1F;
+  --text-muted: #8B6A50;
+  --text-on-dark: #FDF6EC;
+
+  /* Font */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Spacing */
+  --section-py: clamp(4rem, 8vw, 7rem);
+  --container-px: clamp(1.25rem, 5vw, 2rem);
+  --max-width: 1200px;
+
+  /* Animasi */
+  --transition: 0.3s ease;
+  --transition-slow: 0.6s ease;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============================================
+   TIPOGRAFI
+   ============================================ */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  color: var(--color-brown);
+}
+
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-brown);
+  margin-bottom: 1.25rem;
+}
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+.container {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-px);
+  padding-right: var(--container-px);
+}
+
+.section-py {
+  padding-top: var(--section-py);
+  padding-bottom: var(--section-py);
+}
+
+/* ============================================
+   TOMBOL
+   ============================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--color-maroon);
+  color: var(--color-cream);
+}
+.btn-primary:hover {
+  background-color: var(--color-maroon-dark);
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background-color: var(--color-gold);
+  color: var(--color-brown);
+}
+.btn-gold:hover {
+  background-color: var(--color-gold-light);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--color-maroon);
+  color: var(--color-maroon);
+}
+.btn-outline:hover {
+  background-color: var(--color-maroon);
+  color: var(--color-cream);
+}
+
+.btn-outline-cream {
+  background-color: transparent;
+  border: 2px solid var(--color-cream);
+  color: var(--color-cream);
+}
+.btn-outline-cream:hover {
+  background-color: var(--color-cream);
+  color: var(--color-maroon);
+}
+
+/* ============================================
+   ANIMASI FADE-IN
+   Digunakan oleh komponen dengan IntersectionObserver
+   ============================================ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-maroon);
+  border-radius: 3px;
 }

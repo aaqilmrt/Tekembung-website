@@ -1,0 +1,98 @@
+.legality {
+  padding: var(--section-py) 0;
+  background-color: var(--color-cream);
+}
+
+.legalityHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.legalitySubtitle {
+  font-size: 0.975rem;
+  color: var(--text-secondary);
+  max-width: 52ch;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.legalityGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.legalCard {
+  background: white;
+  border: 1px solid rgba(200, 146, 42, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.legalCard:hover {
+  box-shadow: 0 8px 32px rgba(123, 26, 26, 0.12);
+  transform: translateY(-3px);
+}
+
+.legalIcon {
+  width: 128px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.legalIcon img {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+}
+
+.legalTitle {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-brown);
+  margin-bottom: 0.5rem;
+}
+
+.legalNumber {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-maroon);
+  margin-bottom: 0.5rem;
+  word-break: break-all;
+}
+
+.legalDetail {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+.legalKbli {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.legalBtn {
+  font-size: 0.825rem;
+  padding: 0.6rem 1.1rem;
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  .legalityGrid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}

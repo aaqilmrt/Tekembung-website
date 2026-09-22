@@ -1,0 +1,118 @@
+.vm {
+  position: relative;
+  padding: var(--section-py) 0;
+  overflow: hidden;
+}
+
+.vmBg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    170deg,
+    var(--color-maroon-dark) 0%,
+    var(--color-brown) 100%
+  );
+}
+
+.vmBg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(
+    circle at right,
+    rgba(200, 146, 42, 0.08) 0%,
+    transparent 60%
+  );
+}
+
+.vmInner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Visi */
+.visionBlock {
+  text-align: center;
+  margin-bottom: 5rem;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visionStatement {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-gold-pale);
+  line-height: 1.55;
+  border: none;
+  position: relative;
+}
+
+.visionStatement::before {
+  content: "\201C";
+  font-size: 5rem;
+  color: rgba(200, 146, 42, 0.2);
+  position: absolute;
+  top: -1.5rem;
+  left: -1rem;
+  font-family: var(--font-display);
+  line-height: 1;
+}
+
+/* Misi */
+.missionTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  color: var(--color-gold-pale);
+  margin-bottom: 2.5rem;
+}
+
+.missionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.missionCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(200, 146, 42, 0.2);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.missionCard:hover {
+  background: rgba(200, 146, 42, 0.08);
+  transform: translateY(-3px);
+}
+
+.missionNum {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  opacity: 0.5;
+  line-height: 1;
+  margin-bottom: 0.85rem;
+}
+
+.missionText {
+  font-size: 0.9rem;
+  color: rgba(253, 246, 236, 0.75);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .missionGrid {
+    grid-template-columns: 1fr;
+  }
+  .visionBlock {
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,111 @@
+.philosophy {
+  padding: var(--section-py) 0;
+  background-color: var(--color-cream);
+}
+
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* Visual kiri */
+.philosophyVisual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logoImg {
+  width: 100%;
+  height: 460;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.imgMain:hover .logoImg,
+.imgSecond:hover .logoImg {
+  transform: scale(1.04);
+}
+
+
+.logoGlow {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(200, 146, 42, 0.15) 0%,
+    transparent 70%
+  );
+  z-index: 0;
+}
+
+/* Konten kanan */
+.philosophyIntro {
+  font-size: 0.975rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 48ch;
+}
+
+.elementList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.element {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.elementNum {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  min-width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.elementTitle {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-brown);
+  margin-bottom: 0.35rem;
+}
+
+.elementDesc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .philosophyGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .philosophyVisual {
+    order: -1;
+  }
+  .logoGlow {
+    width: 260px;
+    height: 260px;
+  }
+}
