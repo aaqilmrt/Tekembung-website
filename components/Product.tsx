@@ -94,7 +94,7 @@ export default function Product() {
                 className="btn btn-gold"
               >
                   <img
-                    src="/Image/iconShopee.svg"
+                    src="/Image/IconShopee.svg"
                     alt=""
                     width="20"
                     height="20"

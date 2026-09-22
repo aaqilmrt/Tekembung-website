@@ -35,7 +35,7 @@ const socialLinks = [
     href: "https://id.shp.ee/bTEE5cSa?share_channel_code=1",
     icon: 
         <img
-          src="/Image/iconShopeeW.svg"
+          src="/Image/IconShopeeW.svg"
           alt=""
           width="20"
           height="20"
@@ -146,7 +146,7 @@ export default function Footer() {
         <div className={styles.footerBottom}>
           <p>&copy; 2026 TEKEMBUNG. All rights reserved.</p>
           <p className={styles.footerBottomNote}>
-            Produk Lokal Lombok · Berlisensi NIB & Halal
+            Produk Lokal Lombok
           </p>
         </div>
       </div>
