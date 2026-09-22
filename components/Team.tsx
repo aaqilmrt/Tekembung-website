@@ -18,7 +18,7 @@ export default function Team() {
           {/* Foto tim grup */}
           <div className={styles.teamImageWrap}>
             <Image
-              src="/Image/Team.jpg"
+              src="/Image/Team.JPG"
               alt="Tim TEKEMBUNG — mahasiswa FATEPA Universitas Mataram"
               width={560}
               height={640}

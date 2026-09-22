@@ -35,7 +35,7 @@ export default function CTA() {
             className="btn btn-outline-cream"
           >
             <img
-              src="/Image/iconShopeeW.svg"
+              src="/Image/IconShopeeW.svg"
               alt=""
               width="22"
               height="22"
