@@ -32,6 +32,8 @@
   transition: box-shadow 0.3s, transform 0.3s;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .legalCard:hover {
@@ -88,7 +90,6 @@
 .legalBtn {
   font-size: 0.825rem;
   padding: 0.6rem 1.1rem;
-  align-self: flex-start;
 }
 
 @media (max-width: 1024px) {
