@@ -44,10 +44,10 @@
 
 .visionStatement {
   font-family: var(--font-display);
-  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
   font-weight: 400;
   font-style: italic;
-  color: var(--color-gold-pale);
+  color: rgba(253, 246, 236, 0.75);
   line-height: 1.55;
   border: none;
   position: relative;

@@ -10,7 +10,7 @@ export default function CTA() {
       <div className={styles.ctaBg} aria-hidden="true" />
       <div className={`container ${styles.ctaInner}`}>
         <h2 className={styles.ctaTitle}>
-          Siap Menemukan Cita Rasa<br />Masakanmu?
+          Siap Menemukan Cita<br /> Rasa Masakanmu?
         </h2>
         <p className={styles.ctaDesc}>
           Rasakan inovasi terasi dengan ikan kembung dari TEKEMBUNG.

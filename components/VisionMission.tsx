@@ -22,9 +22,9 @@ export default function VisionMission() {
       <div className={`container ${styles.vmInner}`}>
         {/* Visi */}
         <div className={styles.visionBlock}>
-          <span className="section-label" style={{ color: "var(--color-gold-light)" }}>
+          <h2 className="section-title" style={{ color: "var(--color-gold-pale)", textAlign: "center" }}>
             Visi
-          </span>
+          </h2>
           <blockquote className={styles.visionStatement}>
             &ldquo;Menjadi Produsen terasi dengan Ikan Kembung berkualitas
             tinggi dan dapat memanfaatkan bahan pangan lokal serta meningkatkan
@@ -34,11 +34,9 @@ export default function VisionMission() {
 
         {/* Misi */}
         <div className={styles.missionBlock}>
-          <span className="section-label" style={{ color: "var(--color-gold-light)" }}>
+          <h2 className="section-title" style={{ color: "var(--color-gold-pale)", textAlign: "center" }}>
             Misi
-          </span>
-          <h2 className={styles.missionTitle}>Langkah Menuju Visi</h2>
-
+          </h2>
           <div className={styles.missionGrid}>
             {missions.map((m) => (
               <div key={m.number} className={styles.missionCard}>

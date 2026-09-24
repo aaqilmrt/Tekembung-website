@@ -14,13 +14,21 @@ const waLink =
   "https://wa.me/6285966249510?text=Halo%20TEKEMBUNG%2C%20saya%20ingin%20memesan%20produk%20Terasi%20Ikan%20Kembung.";
 const shopeeLink = "https://id.shp.ee/bTEE5cSa?share_channel_code=1";
 
+const comingSoonProducts = [
+  {
+    src: "/Image/sangrai.png",
+    alt: "Terasi Sangrai TEKEMBUNG — Segera Hadir",
+    name: "Terasi Sangrai Tekembung",
+  },
+];
+
 export default function Product() {
   return (
     <section id="produk" className={styles.product}>
       <div className="container">
         <div className={styles.productHeader}>
-          <span className="section-label">Produk Kami</span>
-          <h2 className="section-title">Kenali Produk Kami</h2>
+          {/* <span className="section-label">Produk Kami</span> */}
+          <h2 className="section-title">Produk Kami</h2>
         </div>
 
         <div className={styles.productGrid}>
@@ -48,7 +56,7 @@ export default function Product() {
 
           {/* Info produk */}
           <div className={styles.productInfo}>
-            <div className={styles.productBadge}>Terasi Inovasi Lokal</div>
+            {/* <div className={styles.productBadge}>Terasi Inovasi Lokal</div> */}
             <h3 className={styles.productName}>TEKEMBUNG</h3>
             <p className={styles.productCategory}>
               Terasi dengan Ikan Kembung

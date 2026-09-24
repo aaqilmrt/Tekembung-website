@@ -29,9 +29,9 @@ export default function About() {
         <div className={styles.aboutGrid}>
           {/* Kolom teks */}
           <div className={styles.aboutLeft}>
-            <span className="section-label">Tentang Kami</span>
+            {/* <span className="section-label">Tentang Kami</span> */}
             <h2 className="section-title">
-              Berawal dari<br />Inovasi Lokal
+              Tentang Kami
             </h2>
             <p className={styles.aboutLead}>
               TEKEMBUNG hadir untuk mengangkat nilai terasi yang awalnya 

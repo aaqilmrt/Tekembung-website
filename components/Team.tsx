@@ -6,8 +6,8 @@ export default function Team() {
     <section id="team" className={styles.team}>
       <div className="container">
         <div className={styles.teamHeader}>
-          <span className="section-label">Tim Kami</span>
-          <h2 className="section-title">Di Balik TEKEMBUNG</h2>
+          {/* <span className="section-label">Tim Kami</span> */}
+          <h2 className="section-title">Tim Kami</h2>
           <p className={styles.teamSubtitle}>
             Digerakkan oleh mahasiswa bersemangat dari FATEPA Universitas
             Mataram yang percaya pada potensi hasil laut lokal.
@@ -25,7 +25,12 @@ export default function Team() {
               className={styles.teamImage}
             />
             <div className={styles.teamImageBadge}>
-              <img src="/Image/LogoUnram.png" alt="Universitas Mataram" />
+              <img src="/Image/LogoUnram.png" 
+                alt="Universitas Mataram" 
+                width={40}
+                height={40}
+                className={styles.badgeLogo}
+              />
               <div>
                 <strong>Universitas Mataram</strong>
                 <small>Fakultas Teknologi Pangan dan
@@ -40,13 +45,7 @@ export default function Team() {
             <p className={styles.teamRole}>
               Universitas Mataram
             </p>
-            <p className={styles.teamDesc}>
-              TEKEMBUNG dibangun oleh tim mahasiswa yang mengikuti program
-              MBKM Kewirausahaan di Fakultas Teknologi Pangan dan
-              Agroindustri (FATEPA) Universitas Mataram pada tahun 2024. 
-              Sekarang sedang mengikut Program Pembinaan Mahasiswa Wirausaha (P2MW) 
-              yang dilaksanakan oleh Kemdiktisaintek Republik Indonesia.
-            </p>
+            
             <p className={styles.teamDesc}>
               Dengan semangat inovasi, tim ini mengangkat terasi ikan kembung
               sebagai produk yang layak bersaing di pasar modern, sekaligus

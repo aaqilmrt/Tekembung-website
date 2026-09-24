@@ -1,6 +1,6 @@
 .product {
   padding: var(--section-py) 0;
-  background-color: var(--color-cream-dark);
+  background-color: var(--color-cream);
 }
 
 .productHeader {
@@ -174,3 +174,4 @@
     justify-content: center;
   }
 }
+

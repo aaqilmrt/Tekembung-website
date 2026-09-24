@@ -33,10 +33,10 @@ export default function Features() {
 
       <div className={`container ${styles.featuresInner}`}>
         <div className={styles.featuresHeader}>
-          <span className="section-label" style={{ color: "var(--color-gold-light)" }}>
+          {/* <span className="section-label" style={{ color: "var(--color-gold-light)" }}>
             Keunggulan
-          </span>
-          <h2 className={styles.featuresTitle}>Mengapa TEKEMBUNG?</h2>
+          </span> */}
+          <h2 className={styles.featuresTitle}>Keunggulan Tekembung</h2>
           <p className={styles.featuresSubtitle}>
             Inovasi yang mengangkat bahan lokal menjadi produk berkualitas.
           </p>

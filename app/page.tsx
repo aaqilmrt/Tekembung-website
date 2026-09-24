@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Features from "@/components/Features";
 import Product from "@/components/Product";
+import ComingSoon from "@/components/ComingSoon"; 
 import Philosophy from "@/components/Philosophy";
 import VisionMission from "@/components/VisionMission";
 import Legality from "@/components/Legality";
@@ -27,6 +28,7 @@ export default function HomePage() {
         <About />
         <Features />
         <Product />
+        <ComingSoon /> 
         <Philosophy />
         <VisionMission />
         <Legality />

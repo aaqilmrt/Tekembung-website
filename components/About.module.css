@@ -83,7 +83,7 @@
 .timelineTag {
   font-size: 0.7rem;
   font-weight: 600;
-  color: var(--color-gold);
+  color: var(--color-brown);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: var(--color-gold-pale);
@@ -95,7 +95,7 @@
   font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 600;
-  color: var(--color-brown);
+  color: var(--color-black);
   margin-bottom: 0.4rem;
 }
 

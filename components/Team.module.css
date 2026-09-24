@@ -31,11 +31,8 @@
 .teamImage {
   width: 100%;
   height: auto;
+  display: block;
   border-radius: 20px;
-  object-fit: cover;
-  object-position: center;
-  box-shadow: 0 20px 60px rgba(90, 18, 18, 0.2);
-  max-height: 520px;
 }
 
 .teamImageBadge {
@@ -53,12 +50,6 @@
   font-size: 1.25rem;
 }
 
-.teamImageBadge img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
 
 .teamImageBadge strong {
   display: block;

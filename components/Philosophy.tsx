@@ -43,9 +43,9 @@ export default function Philosophy() {
 
           {/* Kolom kanan — teks */}
           <div className={styles.philosophyContent}>
-            <span className="section-label">Filosofi Logo</span>
+            {/* <span className="section-label">Filosofi Logo</span> */}
             <h2 className="section-title">
-              Makna di Balik<br />
+              Filosofi Logo<br />
               <em style={{ fontStyle: "italic", color: "var(--color-gold)" }}>
                 TEKEMBUNG
               </em>

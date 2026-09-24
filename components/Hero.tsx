@@ -15,7 +15,7 @@ export default function Hero() {
       <div className={`container ${styles.heroInner}`}>
         {/* Kolom kiri — teks */}
         <div className={styles.heroContent}>
-          <span className={styles.heroEyebrow}>Produk Lokal Lombok</span>
+          {/* <span className={styles.heroEyebrow}>Produk Lokal Lombok</span> */}
           <h1 className={styles.heroHeadline}>
             Temukan Cita Rasa<br />
             <em>Masakanmu!</em>
@@ -37,7 +37,7 @@ export default function Hero() {
               Pesan Sekarang
             </a>
             <a href="#about" className="btn btn-outline-cream">
-              Kenali TEKEMBUNG
+              Tentang TEKEMBUNG
             </a>
           </div>
         </div>
@@ -46,10 +46,10 @@ export default function Hero() {
         <div className={styles.heroImageWrap}>
           <div className={styles.heroImageRing} aria-hidden="true" />
           <Image
-            src="/Image/kemasan2.png"
+            src="/Image/dashboard.png"
             alt="Produk TEKEMBUNG Terasi dengan Ikan Kembung kemasan merah"
-            width={420}
-            height={500}
+            width={600}
+            height={420}
             priority
             className={styles.heroImage}
           />

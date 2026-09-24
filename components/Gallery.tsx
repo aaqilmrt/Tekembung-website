@@ -11,19 +11,28 @@ import styles from "./Gallery.module.css";
 // Data galeri — mudah ditambah tanpa mengubah JSX
 const galleryItems = [
   {
-    src: "/Image/galeri1.jpg",
+    src: "/Image/1.jpg",
     alt: "Pembeli 1",
-    caption: "Pembeli-Ibu Marni",
   },
   {
-    src: "/Image/galeri2.jpg",
+    src: "/Image/2.jpg",
     alt: "Pembeli 2",
-    caption: "Pembeli-Ibu Soto",
   },
   {
-    src: "/Image/galeri3.jpg",
+    src: "/Image/6.jpg",
     alt: "Pembeli 3",
-    caption: "Pembeli-Ibu Siti",
+  },
+  {
+    src: "/Image/10.jpg",
+    alt: "Pembeli 4",
+  },
+  {
+    src: "/Image/12.jpg",
+    alt: "Pembeli 5",
+  },
+  {
+    src: "/Image/8.jpg",
+    alt: "Pembeli 6",
   },
 ];
 
@@ -52,8 +61,8 @@ export default function Gallery() {
     <section id="galeri" className={styles.gallery}>
       <div className="container">
         <div className={styles.galleryHeader}>
-          <span className="section-label">Galeri</span>
-          <h2 className="section-title">Yuk Ikut Mencoba!</h2>
+          {/* <span className="section-label">Galeri</span> */}
+          <h2 className="section-title">Galeri</h2>
         </div>
 
         {/* Grid galeri */}
@@ -63,7 +72,7 @@ export default function Gallery() {
               key={i}
               className={styles.galleryItem}
               onClick={() => setSelected(i)}
-              aria-label={`Perbesar: ${item.caption}`}
+              // aria-label={`Perbesar: ${item.caption}`}
             >
               <Image
                 src={item.src}
@@ -75,10 +84,10 @@ export default function Gallery() {
                 loading={i === 0 ? "eager" : "lazy"}
               />
               <div className={styles.galleryOverlay}>
-                <span className={styles.galleryCaption}>{item.caption}</span>
-                <span className={styles.galleryZoom} aria-hidden="true">
+                {/* <span className={styles.galleryCaption}>{item.caption}</span> */}
+                {/* <span className={styles.galleryZoom} aria-hidden="true">
                   🔍
-                </span>
+                </span> */}
               </div>
             </button>
           ))}
@@ -113,7 +122,7 @@ export default function Gallery() {
               className={styles.lightboxImg}
             />
             <p className={styles.lightboxCaption}>
-              {galleryItems[selected].caption}
+              {/* {galleryItems[selected].caption} */}
             </p>
           </div>
           {/* Navigasi prev/next */}

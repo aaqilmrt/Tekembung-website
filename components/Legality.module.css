@@ -18,10 +18,12 @@
 
 .legalityGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+  align-items: stretch; 
 }
 
+/* Cari */
 .legalCard {
   background: white;
   border: 1px solid rgba(200, 146, 42, 0.2);
@@ -54,7 +56,7 @@
 
 .legalTitle {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--color-brown);
   margin-bottom: 0.5rem;
@@ -62,7 +64,7 @@
 
 .legalNumber {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--color-maroon);
   margin-bottom: 0.5rem;
@@ -89,7 +91,13 @@
   align-self: flex-start;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .legalityGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
   .legalityGrid {
     grid-template-columns: 1fr;
     max-width: 440px;

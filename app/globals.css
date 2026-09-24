@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* ============================================
    DESIGN TOKENS — TEKEMBUNG
@@ -17,6 +17,7 @@
   --color-cream-dark: #F5EAD8;
   --color-brown: #3D1F0A;
   --color-brown-mid: #6B3A1F;
+  --color-black: #000000;
 
   /* Teks */
   --text-primary: #2A1208;
@@ -25,8 +26,8 @@
   --text-on-dark: #FDF6EC;
 
   /* Font */
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+--font-display: 'Roboto', sans-serif;
+--font-body: 'Roboto', sans-serif;
 
   /* Spacing */
   --section-py: clamp(4rem, 8vw, 7rem);
@@ -95,7 +96,7 @@ h1, h2, h3, h4 {
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--color-brown);
+  color: var(--color-black);
   margin-bottom: 1.25rem;
 }
 
